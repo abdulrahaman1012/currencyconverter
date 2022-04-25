@@ -13,7 +13,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.absa.currencyconverter.BuildConfig
 import com.absa.currencyconverter.R
 import com.google.android.material.snackbar.Snackbar
-import extension.isOnline
 import utils.EMPTY_STRING
 import utils.Util
 import viewmodel.ConverterViewModel
