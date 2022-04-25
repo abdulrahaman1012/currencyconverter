@@ -21,14 +21,7 @@ class ConverterViewModel : ViewModel() {
     fun getConvertedData(apiKey: String, source: String?, destination: String?, amount: Double) {
         viewModelScope.launch(Dispatchers.IO) {
             val apiInterface = ApiClient.getClient().create(ApiService::class.java)
-            currencyLiveData.postValue(
-                apiInterface.convertCurrency(
-                    apiKey,
-                    source,
-                    destination,
-                    amount
-                )
-            )
+            currencyLiveData.postValue(apiInterface.convertCurrency(apiKey, source, destination, amount))
         }
     }
 }
