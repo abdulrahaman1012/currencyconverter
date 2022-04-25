@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="title">Currency Converter</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="amount">Amount</string>
+    <string name="convert">Convert</string>
+    <string name="converted_amount">Converted Amount</string>
+    <string name="result">Result</string>
+    <string name="source_currency">Source Currency</string>
+    <string name="destination_currency">Destination Currency</string>
+    <string name="blank_field">Enter proper amount</string>
+    <string name="network_error">You are not connected to the internet</string>
+    <string name="error_load_data">Error in loading data</string>
+</resources>
