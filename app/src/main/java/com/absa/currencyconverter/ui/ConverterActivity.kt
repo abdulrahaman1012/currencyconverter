@@ -97,7 +97,7 @@ class ConverterActivity : AppCompatActivity() {
     private fun getConvertedData() {
         binding.progressBarCurrency.visibility = View.VISIBLE
         viewModel.getConvertedData(BuildConfig.API_KEY, selectedSourceCurrency, selectedDestinationCurrency, binding.edtAmount.text.toString().toDouble())
-        viewModel.getConvertedDataObserver().observe(this, { it ->
+        viewModel.getConvertedDataObserver().observe(this) { it ->
             if (it != null) {
                 val map = it.rates
                 map.keys.forEach {
@@ -112,6 +112,5 @@ class ConverterActivity : AppCompatActivity() {
                 Toast.makeText(this, getString(R.string.error_load_data), Toast.LENGTH_SHORT).show()
             }
         }
-        )
     }
 }
